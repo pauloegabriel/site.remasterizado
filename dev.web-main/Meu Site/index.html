@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homem-Aranha</title>
+
+  <!-- Ícone da aba do navegador -->
+  <link rel="shortcut icon" type="image/png" href="img/aa.png"/>
+
+  <!-- Estilo base do Bootstrap -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+  <!-- Fonte estilo quadrinhos -->
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+  <style>
+    html, body {
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    body {
+      background-color: #0A1F44;
+      color: #FFFFFF;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    .navbar {
+      background-color: #D00000;
+    }
+
+    .navbar-brand {
+      color: #FFFFFF !important;
+      font-weight: normal;
+      font-family: 'Bangers', cursive;
+      font-size: 1.5rem;
+    }
+
+    .btn-outline-light {
+      border-color: #FFFFFF;
+      color: #FFFFFF;
+    }
+
+    .btn-outline-light:hover {
+      background-color: #FFFFFF;
+      color: #D00000;
+    }
+
+    .dropdown-menu {
+      background-color: #D00000;
+    }
+
+    .dropdown-item {
+      color: #FFFFFF;
+      font-weight: normal;
+    }
+
+    .dropdown-item:hover {
+      background-color: #FFFFFF;
+      color: #D00000;
+    }
+
+    /* Estilo de bolha similar ao "EM BREVE FILMES" */
+    .navbar-nav .nav-item .btn {
+      padding: 10px 30px;
+      font-size: 1.1rem;
+      border-radius: 50px; /* Borda arredondada */
+      background-color: transparent;
+      border: 2px solid #FFFFFF;
+      transition: all 0.3s ease;
+    }
+
+    .navbar-nav .nav-item .btn:hover {
+      background-color: #FFFFFF;
+      color: #D00000;
+      transform: translateY(-3px); /* Leve elevação */
+    }
+
+    /* Estilo do botão de busca */
+    .form-control, .btn-outline-light {
+      border-radius: 50px; /* Borda arredondada para o botão de busca */
+      padding: 10px 30px;
+      font-size: 1rem;
+      border: 2px solid #FFFFFF;
+    }
+
+    .form-control:focus, .btn-outline-light:focus {
+      box-shadow: none; /* Remover o brilho azul do foco */
+    }
+
+    .spiderman-section {
+      text-align: center;
+      padding: 50px;
+    }
+
+    .spiderman-section img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- CABEÇALHO COM MENU -->
+  <header>
+    <nav class="navbar navbar-expand-lg p-3">
+      <div class="container-fluid">
+        <!-- Logo/Nome do site -->
+        <a class="navbar-brand" href="/index.html">
+          <img src="img/aa.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top me-2">
+          Homem-Aranha
+        </a>
+
+        <!-- Botão do menu no modo responsivo -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu com links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item p-1">
+              <a class="btn btn-outline-light" href="/FILMES.html">EM BREVE FILMES</a>
+            </li>
+
+            <li class="nav-item dropdown p-1">
+              <!-- Botão "Mais" com estilo igual ao do botão "EM BREVE FILMES" -->
+              <a class="nav-link dropdown-toggle btn btn-outline-light" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Mais</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/pages/contatos.html">Contatos</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="/pages/produtos.html">Produtos</a></li>
+                <li><a class="dropdown-item" href="#">Em breve</a></li>
+                
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Barra de pesquisa -->
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main>
+    <section class="spiderman-section">
+      <h1 style="font-family: 'Bangers', cursive; font-size: 3rem;">
+        Bem-vindo ao Universo do Homem-Aranha Aracnídeo!
+      </h1>
+      <p>Explore filmes, curiosidades e muito mais.</p>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="text-center p-3" style="background-color: #0A1F44; color: white; border-top: 4px solid #D00000;">
+    &copy; 2025 - Universo Homem-Aranha. Todos os direitos reservados.
+  </footer>
+
+  <!-- Script do Bootstrap -->
+  <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
