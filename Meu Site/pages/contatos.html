@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homem-Aranha</title>
+
+  <!-- Ícone da aba do navegador -->
+  <link rel="shortcut icon" type="image/png" href="../img/aranha.png"/>
+  
+  <!-- CSS do Bootstrap -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+  <!-- Fonte estilo quadrinhos do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+  <style>
+    /* Configuração básica da página */
+    html, body {
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    body {
+      background-color: #0A1F44; /* Fundo azul escuro */
+      color: #FFFFFF; /* Texto branco */
+    }
+
+    main {
+      flex: 1; /* Ocupa espaço disponível */
+    }
+
+    /* Estilo da barra de navegação */
+    .navbar {
+      background-color: #D00000; /* Vermelho intenso */
+    }
+
+    /* Marca da navbar com fonte personalizada */
+    .navbar-brand {
+      color: #FFFFFF !important;
+      font-weight: bold;
+      font-family: 'Bangers', cursive;
+      font-size: 1.5rem;
+      text-transform: capitalize; /* Capitaliza primeira letra */
+    }
+
+    /* Botões com borda e texto branco */
+    .btn-outline-light {
+      border-color: #FFFFFF;
+      color: #FFFFFF;
+    }
+
+    /* Efeito hover para os botões */
+    .btn-outline-light:hover {
+      background-color: #FFFFFF;
+      color: #D00000;
+    }
+
+    /* Menu dropdown com fundo vermelho */
+    .dropdown-menu {
+      background-color: #D00000;
+    }
+
+    /* Itens do dropdown com texto branco */
+    .dropdown-item {
+      color: #FFFFFF;
+    }
+
+    /* Efeito hover para itens do dropdown */
+    .dropdown-item:hover {
+      background-color: #FFFFFF;
+      color: #D00000;
+    }
+
+    /* Seção principal com alinhamento central e espaçamento */
+    .spiderman-section {
+      text-align: center;
+      padding: 50px;
+    }
+
+    /* Imagens na seção principal */
+    .spiderman-section img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    /* Lista de contatos personalizada */
+    .contact-list {
+      list-style: none; /* Remove marcadores */
+      padding: 0;
+      font-size: 1.2rem;
+    }
+
+    /* Estilo dos links na lista de contatos */
+    .contact-list a {
+      color: #D00000; /* Vermelho para links */
+      text-decoration: none;
+    }
+
+    /* Efeito hover nos links de contato */
+    .contact-list a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Cabeçalho com menu de navegação -->
+  <header>
+    <nav class="navbar navbar-expand-lg p-3">
+      <div class="container-fluid">
+        <!-- Logo e nome da página -->
+        <a class="navbar-brand" href="../index.html">
+          <img src="../img/aranha.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top me-2">
+          Contatos
+        </a>
+
+        <!-- Botão para colapsar menu em telas pequenas -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Itens do menu -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- Botão "Em Breve Filmes" -->
+            <li class="nav-item p-1">
+              <a class="btn btn-outline-light" href="#">EM BREVE FILMES</a>
+            </li>
+
+            <!-- Menu dropdown "Mais" -->
+            <li class="nav-item dropdown p-1">
+              <a class="nav-link dropdown-toggle btn btn-outline-light" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Mais</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="contatos.html">Contatos</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="produtos.html">Produtos</a></li>
+                <li><a class="dropdown-item" href="#">Em breve</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Formulário de busca -->
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <section class="spiderman-section">
+      <h1 style="font-family: 'Bangers', cursive; font-size: 3rem;">Confira os contatos do Universo Homem-Aranha!</h1>
+      <p>Em breve, novidades incríveis para você colecionar.</p>
+
+      <!-- Lista de contatos -->
+      <ul class="contact-list">
+        <li><strong>Email:</strong> contato@universo-aranha.com</li>
+        <li><strong>Telefone:</strong> (11) 99999-9999</li>
+        <li><strong>Instagram:</strong> <a href="https://instagram.com/universoaranha" target="_blank" rel="noopener noreferrer">@universoaranha</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="text-center p-3" style="background-color: #0A1F44; color: white; border-top: 4px solid #D00000;">
+    &copy; 2025 - Universo Homem-Aranha. Todos os direitos reservados.
+  </footer>
+
+  <!-- JavaScript do Bootstrap -->
+  <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

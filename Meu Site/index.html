@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homem-Aranha</title>
+	
+  <!-- Ícone da aba do navegador -->
+  <link rel="shortcut icon" type="image/png" href="img/aranha.png" />
+
+  <!-- Bootstrap CDN para estilos prontos -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Fonte estilo quadrinhos para o título -->
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet" />
+
+  <style>
+    /* Define altura total e remove margens padrão */
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    /* Estilo geral do corpo da página */
+    body {
+      background-color: #0A1F44; /* Azul escuro */
+      color: #FFFFFF; /* Texto branco */
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Navbar com fundo vermelho */
+    .navbar {
+      background-color: #D00000;
+    }
+
+    /* Marca da navbar com fonte especial */
+    .navbar-brand {
+      color: #FFFFFF !important;
+      font-family: 'Bangers', cursive;
+      font-size: 1.5rem;
+    }
+
+    /* Estilo do botão com borda e texto branco */
+    .btn-outline-light {
+      border-color: #FFFFFF;
+      color: #FFFFFF;
+      border-radius: 50px;
+      padding: 10px 30px;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    /* Efeito hover do botão: fundo branco e texto vermelho */
+    .btn-outline-light:hover {
+      background-color: #FFFFFF;
+      color: #D00000;
+      transform: translateY(-3px);
+    }
+
+    /* Fundo vermelho para dropdown */
+    .dropdown-menu {
+      background-color: #D00000;
+      border: none;
+    }
+
+    /* Itens do dropdown em branco */
+    .dropdown-item {
+      color: #FFFFFF;
+    }
+
+    /* Hover dos itens do dropdown: fundo branco e texto vermelho */
+    .dropdown-item:hover {
+      background-color: #FFFFFF;
+      color: #D00000;
+    }
+
+    /* Estilo dos inputs de formulário */
+    .form-control {
+      border-radius: 50px;
+      border: 2px solid #FFFFFF;
+      padding: 10px 20px;
+      font-size: 1rem;
+    }
+
+    /* Remove sombra padrão no foco e mantém borda branca */
+    .form-control:focus {
+      box-shadow: none;
+      border-color: #FFFFFF;
+    }
+
+    /* Área principal com centralização do conteúdo */
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    /* Estilo da imagem dentro da seção do Homem-Aranha */
+    .spiderman-section img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    }
+
+    /* Estilo do rodapé */
+    footer {
+      background-color: #0A1F44;
+      color: white;
+      border-top: 4px solid #D00000;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- CABEÇALHO: barra de navegação -->
+  <header>
+    <nav class="navbar navbar-expand-lg p-3">
+      <div class="container">
+        <!-- Logo e título -->
+        <a class="navbar-brand" href="index.html">
+          <img src="img/aranha.png" alt="Logo" width="30" height="30" class="me-2" />
+          Homem-Aranha
+        </a>
+
+        <!-- Botão para colapsar menu em telas pequenas -->
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Itens do menu -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- Botão "Em breve filmes" -->
+            <li class="nav-item me-2">
+              <a class="btn btn-outline-light" href="#">EM BREVE FILMES</a>
+            </li>
+
+            <!-- Dropdown "Mais" -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle btn btn-outline-light" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Mais</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="pages/contatos.html">Contatos</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="pages/produtos.html">Produtos</a></li>
+                <li><a class="dropdown-item" href="#">Em breve</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Formulário de busca -->
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search" />
+            <button class="btn btn-outline-light" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main>
+    <!-- Imagem em tela cheia responsiva -->
+    <img src="/img/telacheia.png" class="img-fluid w-100 vh-100" alt="Imagem tela cheia">
+
+    <!-- cards (seção para futuras adições) -->
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="text-center p-3">
+    &copy;  Universo Homem-Aranha.
+  </footer>
+
+  <!-- Bootstrap JS CDN para funcionalidades -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
